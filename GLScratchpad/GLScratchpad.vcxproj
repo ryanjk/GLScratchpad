@@ -64,7 +64,7 @@
     <CodeAnalysisRuleAssemblies />
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <LibraryPath>$(ProjectDir)lib\x86;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
-    <IncludePath>$(ProjectDir)include\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -72,7 +72,7 @@
     <CodeAnalysisRuleAssemblies />
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <LibraryPath>$(ProjectDir)lib\x64;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(ProjectDir)include\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -80,7 +80,7 @@
     <CodeAnalysisRuleAssemblies />
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <LibraryPath>$(ProjectDir)lib\x86;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
-    <IncludePath>$(ProjectDir)include\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -88,7 +88,7 @@
     <CodeAnalysisRuleAssemblies />
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <LibraryPath>$(ProjectDir)lib\x64;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(ProjectDir)include\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -180,26 +180,6 @@
     <ClCompile Include="directories.cpp" />
     <ClCompile Include="FloatAttribute.cpp" />
     <ClCompile Include="FloatAttributeView.cpp" />
-    <ClCompile Include="GeneratedFiles\Debug\moc_applicationcommandthread.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_applicationframe.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_cameraview.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_programview.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_mainwindow.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
       </PrecompiledHeader>
@@ -210,26 +190,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_applicationcommandthread.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_applicationframe.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_cameraview.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_programview.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_applicationcommandthread.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_applicationframe.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_cameraview.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_programview.cpp" />
     <ClCompile Include="IntegerAttribute.cpp" />
     <ClCompile Include="IntegerAttributeView.cpp" />
     <ClCompile Include="lodepng.cpp" />
@@ -331,37 +296,6 @@
     <ClInclude Include="glew.h" />
     <ClInclude Include="glsp_gl_util.h" />
     <ClInclude Include="glsp_types.h" />
-    <ClInclude Include="include\AbstractShader.h" />
-    <ClInclude Include="include\Application.h" />
-    <ClInclude Include="include\applicationcommandthread.h" />
-    <ClInclude Include="include\applicationframe.h" />
-    <ClInclude Include="include\AttributeView.h" />
-    <ClInclude Include="include\Camera.h" />
-    <ClInclude Include="include\cameraview.h" />
-    <ClInclude Include="include\ConcurrentCommandQueue.h" />
-    <ClInclude Include="include\directories.h" />
-    <ClInclude Include="include\FloatAttribute.h" />
-    <ClInclude Include="include\FloatAttributeView.h" />
-    <ClInclude Include="include\glew.h" />
-    <ClInclude Include="include\glsp_gl_util.h" />
-    <ClInclude Include="include\glsp_types.h" />
-    <ClInclude Include="include\IntegerAttribute.h" />
-    <ClInclude Include="include\IntegerAttributeView.h" />
-    <ClInclude Include="include\json.h" />
-    <ClInclude Include="include\lodepng.h" />
-    <ClInclude Include="include\mainwindow.h" />
-    <ClInclude Include="include\Mesh.h" />
-    <ClInclude Include="include\programview.h" />
-    <ClInclude Include="include\RenderData.h" />
-    <ClInclude Include="include\Shader.h" />
-    <ClInclude Include="include\ShaderAttribute.h" />
-    <ClInclude Include="include\TestShader.h" />
-    <ClInclude Include="include\Texture.h" />
-    <ClInclude Include="include\TextureLoadData.h" />
-    <ClInclude Include="include\tiny_obj_loader.h" />
-    <ClInclude Include="include\Util.h" />
-    <ClInclude Include="include\VectorAttribute.h" />
-    <ClInclude Include="include\VectorAttributeView.h" />
     <ClInclude Include="GeneratedFiles\ui_programview.h" />
     <ClInclude Include="GeneratedFiles\ui_cameraview.h" />
     <ClInclude Include="GeneratedFiles\ui_mainwindow.h" />

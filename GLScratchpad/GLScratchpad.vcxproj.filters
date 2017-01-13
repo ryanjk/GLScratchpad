@@ -165,35 +165,20 @@
     <ClCompile Include="VectorAttributeView.cpp">
       <Filter>Source Files\GUI\AttributeView</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_programview.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_programview.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_cameraview.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_cameraview.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_applicationframe.cpp">
-      <Filter>Generated Files\Debug</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_applicationcommandthread.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_applicationframe.cpp">
-      <Filter>Generated Files\Release</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_applicationcommandthread.cpp">
-      <Filter>Generated Files\Debug</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_cameraview.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_applicationcommandthread.cpp">
-      <Filter>Generated Files\Release</Filter>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_programview.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -209,20 +194,20 @@
     <CustomBuild Include="programview.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="programview.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="mainwindow.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="cameraview.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="applicationcommandthread.h">
+      <Filter>Header Files\Application</Filter>
     </CustomBuild>
     <CustomBuild Include="applicationframe.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\GUI</Filter>
     </CustomBuild>
-    <CustomBuild Include="applicationcommandthread.h">
-      <Filter>Header Files</Filter>
+    <CustomBuild Include="cameraview.h">
+      <Filter>Header Files\GUI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Files\GUI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="programview.h">
+      <Filter>Header Files\GUI</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -235,176 +220,83 @@
     <ClInclude Include="GeneratedFiles\ui_programview.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\AbstractShader.h">
+    <ClInclude Include="AbstractShader.h">
       <Filter>Header Files\Shader</Filter>
     </ClInclude>
-    <ClInclude Include="include\cameraview.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ConcurrentCommandQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\directories.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\FloatAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\FloatAttributeView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\glew.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\glsp_gl_util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\glsp_types.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\IntegerAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\IntegerAttributeView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\json.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\lodepng.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\mainwindow.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Mesh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\programview.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\RenderData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\ShaderAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\TestShader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\TextureLoadData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\tiny_obj_loader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\VectorAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\VectorAttributeView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Application.h">
+    <ClInclude Include="Application.h">
       <Filter>Header Files\Application</Filter>
-    </ClInclude>
-    <ClInclude Include="include\applicationcommandthread.h">
-      <Filter>Header Files\Application</Filter>
-    </ClInclude>
-    <ClInclude Include="include\applicationframe.h">
-      <Filter>Header Files\GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="include\AttributeView.h">
-      <Filter>Header Files\GUI\AttributeView</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Camera.h">
-      <Filter>Header Files\Application</Filter>
-    </ClInclude>
-    <ClInclude Include="VectorAttributeView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="VectorAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tiny_obj_loader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureLoadData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TestShader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ShaderAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RenderData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Mesh.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lodepng.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="json.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IntegerAttributeView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IntegerAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="glsp_types.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="glsp_gl_util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="glew.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FloatAttributeView.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FloatAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="directories.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ConcurrentCommandQueue.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcurrentCommandQueue.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderData.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorAttribute.h">
+      <Filter>Header Files\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderAttribute.h">
+      <Filter>Header Files\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegerAttribute.h">
+      <Filter>Header Files\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatAttribute.h">
+      <Filter>Header Files\Attribute</Filter>
+    </ClInclude>
+    <ClInclude Include="glew.h">
+      <Filter>Header Files\Imported</Filter>
+    </ClInclude>
+    <ClInclude Include="directories.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="glsp_gl_util.h">
+      <Filter>Header Files\Shader\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\Shader\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\Shader\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\Shader\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoadData.h">
+      <Filter>Header Files\Shader\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="TestShader.h">
+      <Filter>Header Files\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="glsp_types.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <Filter>Header Files\Imported</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>Header Files\Imported</Filter>
+    </ClInclude>
+    <ClInclude Include="tiny_obj_loader.h">
+      <Filter>Header Files\Imported</Filter>
     </ClInclude>
     <ClInclude Include="AttributeView.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\GUI\AttributeView</Filter>
     </ClInclude>
-    <ClInclude Include="Application.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="FloatAttributeView.h">
+      <Filter>Header Files\GUI\AttributeView</Filter>
     </ClInclude>
-    <ClInclude Include="AbstractShader.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="IntegerAttributeView.h">
+      <Filter>Header Files\GUI\AttributeView</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorAttributeView.h">
+      <Filter>Header Files\GUI\AttributeView</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
