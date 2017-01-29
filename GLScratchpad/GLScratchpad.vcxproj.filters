@@ -180,6 +180,12 @@
     <ClCompile Include="GeneratedFiles\Release\moc_programview.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ScreenSpaceShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureProjectionShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="mainwindow.ui">
@@ -297,6 +303,12 @@
     </ClInclude>
     <ClInclude Include="VectorAttributeView.h">
       <Filter>Header Files\GUI\AttributeView</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenSpaceShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureProjectionShader.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

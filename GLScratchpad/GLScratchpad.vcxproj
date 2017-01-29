@@ -202,9 +202,11 @@
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="programview.cpp" />
+    <ClCompile Include="ScreenSpaceShader.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="TestShader.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureProjectionShader.cpp" />
     <ClCompile Include="tiny_obj_loader.cpp" />
     <ClCompile Include="Util.cpp" />
     <ClCompile Include="VectorAttribute.cpp" />
@@ -341,11 +343,13 @@
     <ClInclude Include="lodepng.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="RenderData.h" />
+    <ClInclude Include="ScreenSpaceShader.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderAttribute.h" />
     <ClInclude Include="TestShader.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TextureLoadData.h" />
+    <ClInclude Include="TextureProjectionShader.h" />
     <ClInclude Include="tiny_obj_loader.h" />
     <ClInclude Include="Util.h" />
     <ClInclude Include="VectorAttribute.h" />

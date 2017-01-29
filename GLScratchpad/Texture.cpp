@@ -68,7 +68,9 @@ void Texture::Load(const std::string& filename, const TextureLoadData& load_data
 		auto taken = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count();
 		PrintLine(std::string(" - Taken to flip (ms): ") + std::to_string(taken));
 
+		static const GLfloat border_color[3] = { 1.0, 1.0, 1.0 };
 		GLint wrap = load_data.wrap;
+
 		GLint mag_filter = load_data.filter;
 		GLint min_filter = load_data.filter;
 		int mipmap_levels = 1;
@@ -97,6 +99,10 @@ void Texture::Load(const std::string& filename, const TextureLoadData& load_data
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, mag_filter);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, min_filter);
 		
+		if (wrap == GL_CLAMP_TO_BORDER) {
+			glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, border_color);
+		}
+
 		glBindTexture(type_, 0);
 		taken = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - t1).count();
 		PrintLine(std::string(" - Taken to create GL object (ms): ") + std::to_string(taken));

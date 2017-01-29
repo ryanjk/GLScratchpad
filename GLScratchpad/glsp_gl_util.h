@@ -7,6 +7,7 @@
 
 #define MESH(x,filename) std::shared_ptr<glsp::Mesh> x = std::make_shared<glsp::Mesh>(filename); 
 #define TEXTURE(x,filename) std::shared_ptr<glsp::Texture> x = std::make_shared<glsp::Texture>(filename); 
+#define TEXTURE_CUSTOM(x, load_data, filename) std::shared_ptr<glsp::Texture> x = std::make_shared<glsp::Texture>(filename, load_data); 
 #define SHADER(x,shader_name) std::shared_ptr<glsp::Shader> x = std::make_shared<glsp::Shader>(shader_name);
 
 #endif
