@@ -1,0 +1,6 @@
+{
+  "name" : "REPLACEME",
+  "window_width" : X_RESOLUTION,
+  "window_height" : Y_RESOLUTION,
+  "attributes" : []
+}

@@ -173,6 +173,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="applicationcommandthread.cpp" />
     <ClCompile Include="applicationframe.cpp" />
+    <ClCompile Include="ApplicationProgramLoad.cpp" />
     <ClCompile Include="AttributeView.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="cameraview.cpp" />

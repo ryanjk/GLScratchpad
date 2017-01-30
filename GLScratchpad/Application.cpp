@@ -8,10 +8,6 @@
 
 #include "glew.h"
 
-#include "TestShader.h"
-#include "ScreenSpaceShader.h"
-#include "TextureProjectionShader.h"
-
 #include "AbstractShader.h"
 #include "ShaderAttribute.h"
 
@@ -23,19 +19,6 @@ Application::Application() : camera_{}, program_{} {
 }
 
 Application::~Application() {
-}
-
-void Application::LoadProgram(std::string name) {
-	if (name == "test") {
-		program_ = std::make_shared<glsp::TestShader>(&camera_);
-	}
-	else if (name == "screen space") {
-		program_ = std::make_shared<glsp::ScreenSpaceShader>(&camera_);
-	}
-	else if (name == "texture projection") {
-		program_ = std::make_shared<glsp::TextureProjectionShader>(&camera_);
-	}
-	program_->Init();
 }
 
 void Application::CloseProgram() {

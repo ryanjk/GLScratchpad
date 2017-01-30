@@ -1,0 +1,26 @@
+#ifndef GLSP_REPLACEME_H
+#define GLSP_REPLACEME_H
+
+#include <memory>
+
+#include "AbstractShader.h"
+#include "glsp_gl_util.h"
+
+namespace glsp {
+
+class REPLACEME : public AbstractShader {
+public:
+	REPLACEME(glsp::Camera* camera = nullptr);
+	~REPLACEME();
+
+	void Init() override;
+	void Close() override;
+	void Render(glsp::RenderData) override;
+
+private:
+
+};
+
+} //namespace glsp
+
+#endif
